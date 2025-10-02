@@ -36,7 +36,7 @@ class Conference(models.Model):
         return int(total_seconds - elapsed)
 
     def __str__(self):
-        return f"Выступает: {self.full_name}"
+        return f"Выступает: {self.speaker}"
 
     class Meta:
         verbose_name_plural = "Conference"
